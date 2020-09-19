@@ -1,0 +1,145 @@
+<html>
+
+<head>
+
+    <title>Interactive Optimization Methods &#124; Ezequiel Leonardo Castaño Personal Website</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="" />
+    <!-- Feed -->
+    <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/ELCWEB"
+        title="Ezequiel Leonardo Castaño Personal Website Atom Feed" />
+    <link rel="alternate" type="application/atom+xml" href="http://feeds.feedburner.com/feeds/all.atom.xml"
+        title="Ezequiel Leonardo Castaño Personal Website Atom Feed" />
+
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Social -->
+    <meta property="article:author" content="Ezequiel Leonardo Castaño" />
+    <meta property="article:section" content="Programming" />
+    <meta property="article:published_time" content="2019-11-17" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Interactive Optimization Methods &#124; Ezequiel Leonardo Castaño Personal Website" />
+    <meta property="og:description"
+        content="An index with different Interactive Optimization Methods, both gradient based and gradient Free" />
+    <meta property="og:site_name" content="Ezequiel Leonardo Castaño Personal Website" />
+    <meta property="og:url" content="https://elc.github.io/interactive-optimization/" />
+    <meta property="og:image" content="https://elc.github.io/interactive-optimization/media_image.png" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Interactive Optimization Methods &#124; Ezequiel Leonardo Castaño Personal Website">
+    <meta name="twitter:description"
+        content="An index with different Interactive Optimization Methods, both gradient based and gradient Free">
+    <meta name="twitter:url" content="https://elc.github.io/interactive-optimization/">
+    <meta name="twitter:image" content="https://elc.github.io/interactive-optimization/media_image.png">
+
+    <!-- LOAD ADD-ONS -->
+
+    <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href='style.css'>
+
+</head>
+
+<body>
+    <script>
+        function toggle(id) {
+            document.getElementById(id).classList.toggle("frame--invisible");
+            document.getElementById("main").classList.toggle("frame--invisible");
+        }
+    </script>
+
+    <div class="frame--main" id="main">
+        <header class="header window">
+            <h1 class="header__title">Interactive Optimization Methods</h1>
+        </header>
+        <div class="content">
+            <section class="option window">
+                <h2 class="option__title">Gradient Based</h2>
+                <button class="button" onclick="toggle('Newton')">Newton</button>
+                <button class="button" onclick="toggle('Gradient-Descent')">Gradient Descent</button>
+                <button class="button" onclick="toggle('Levenberg–Marquardt')">Levenberg–Marquardt</button>
+                <button class="button button--disable">Quasi Newton (BFGS)<br><small>Work In Progress</small></button>
+                <button class="button" onclick="toggle('Comparison')">Comparison</button>
+            </section>
+
+            <section class="option window">
+                <h2 class="option__title">Gradient Free</h2>
+                <button class="button button--disable" onclick="">Differential Evolution<br><small>Work In Progress</small></button>
+                <button class="button button--disable" onclick="">Simulated Annealing<br><small>Work In Progress</small></button>
+                <button class="button button--disable" onclick="">Nelder–Mead<br><small>Work In Progress</small></button>
+                <button class="button button--disable" onclick="">Particle Swarm<br><small>Work In Progress</small></button>
+            </section>
+
+            <section class="option window">
+                <h2 class="option__title">Sampling Based</h2>
+                <button class="button button--disable" onclick="">Grid Search<br><small>Work In Progress</small></button>
+                <button class="button button--disable" onclick="">Random Search<br><small>Work In Progress</small></button>
+                <button class="button button--disable" onclick="">Latin Hypercube<br><small>Work In Progress</small></button>
+            </section>
+        </div>
+        <footer class="footer window">
+            <p>Gradient Based Methods were assignments for the course <a
+                    href="https://www.tu-ilmenau.de/en/process-optimization/teaching/vorlesungen-seminare-und-praktika/wintersemester/">Systems
+                    Optimization</a> at the <a href="https://www.tu-ilmenau.de/">TU Ilmenau</a>
+                <br>
+                Developed by <a href="https://elc.github.io">Ezequiel Leonardo Castaño</a>
+
+            </p>
+        </footer>
+    </div>
+
+    <section id="Newton" class="frame--secondary frame--invisible">
+        <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
+            Index</button>
+        <iframe src="https://elc.github.io/newton-method-multi-variable" class="frame--secondary"></iframe>
+    </section>
+
+    <section id="Gradient-Descent" class="frame--secondary frame--invisible">
+        <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
+            Index</button>
+        <iframe src="https://elc.github.io/gradient-descent-method" class="frame--secondary"></iframe>
+    </section>
+
+    <section id="Levenberg–Marquardt" class="frame--secondary frame--invisible">
+        <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
+            Index</button>
+        <iframe src="https://elc.github.io/levenberg-marquardt-method" class="frame--secondary"></iframe>
+    </section>
+
+    <section id="Comparison" class="frame--secondary frame--invisible">
+        <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
+            Index</button>
+        <iframe src="https://elc.github.io/systems-optimization-methods" class="frame--secondary"></iframe>
+    </section>
+    
+    <!-- Google Analytics -->
+    <script>
+        (function (i, s, o, g, r, a, m) {
+            i["GoogleAnalyticsObject"] = r;
+            i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
+        ga("create", "UA-71773079-3", "auto");
+        ga("send", "pageview");
+    </script>
+
+</body>
+
+</html>

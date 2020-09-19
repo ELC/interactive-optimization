@@ -1,0 +1,130 @@
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'M PLUS 1p', sans-serif;
+    background-color: #fcfcfc;
+    margin: 0;
+}
+
+iframe {
+    border: none;
+}
+
+.button {
+    width: 100%;
+    margin: 5px;
+    height: 43px;
+    box-sizing: border-box;
+    padding: 5px;
+    background-color: #0d47a1;
+    font-size: 16pt;
+    color: white;
+    border: 0;
+    cursor: pointer;
+    font-size: 12pt;
+}
+
+.button--disable {
+    background: #bbbbbb;
+    cursor: default;
+}
+
+.frame--main {
+    display: grid;
+    flex-direction: column;
+    grid-template-columns: auto 900px auto;
+    grid-template-rows: 145px 425px 64px;
+    margin-top: 8px;
+}
+
+.frame--secondary {
+    width: 930px;
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.frame--secondary__return-button {
+    font-weight: bold;
+    position: absolute;
+    width: auto;
+    box-sizing: content-box;
+    font-size: 11pt;
+    right: 25px;
+    top: 5px;
+    background-color: white;
+    color: #0d47a1;
+    z-index: 1;
+}
+
+.frame--invisible {
+    display: none;
+}
+
+.window {
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding: 12px 12px;
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header {
+    margin: 0 0 15px 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: auto;
+    margin: 0;
+    grid-column-start: 2;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
+
+.header__title {
+    text-align: center;
+    margin: 0;
+}
+
+.option {
+    width: 32%;
+    height: auto;
+    margin: 10px 0;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.option__title {
+    margin: 0;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    width: 100%;
+    grid-row-end: 3;
+    box-sizing: border-box;
+    margin: 5px 0 0 0;
+    justify-content: space-between;
+}
+
+.footer {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    box-sizing: border-box;
+    grid-row-end: 3;
+    margin: 0;
+    text-align: center;
+    padding: 0px;
+    height: 68px;
+    display: flex;
+    justify-content: center; /* align horizontal */
+    align-items: center;
+}
