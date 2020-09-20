@@ -81,20 +81,28 @@
                 <button class="button button--disable" onclick="">Particle Swarm<br><small>Work In Progress</small></button>
             </section>
 
-            <section class="option window">
-                <h2 class="option__title">Sampling Based</h2>
-                <button class="button button--disable" onclick="">Grid Search<br><small>Work In Progress</small></button>
-                <button class="button button--disable" onclick="">Random Search<br><small>Work In Progress</small></button>
-                <button class="button button--disable" onclick="">Latin Hypercube<br><small>Work In Progress</small></button>
-            </section>
+            <div class="option option--multiple">
+                <section class="window">
+                    <h2 class="option__title">Sampling Based</h2>
+                    <button class="button button--disable" onclick="">Grid Search<br><small>Work In Progress</small></button>
+                    <button class="button button--disable" onclick="">Random Search<br><small>Work In Progress</small></button>
+                    <button class="button button--disable" onclick="">Latin Hypercube<br><small>Work In Progress</small></button>
+                </section>
+
+                <section class="window">
+                    <h2 class="option__title">Auxiliary</h2>
+                    <button class="button" onclick="toggle('Newton-Raphson')">Newton Raphson</button>
+                    <button class="button button--disable" onclick="">Line Search<br><small>Work In Progress</small></button>
+                </section>  
+            </div>
         </div>
         <footer class="footer window">
-            <p>Gradient Based Methods were assignments for the course <a
+            <p>
+                This project was an assignment for the course <a
                     href="https://www.tu-ilmenau.de/en/process-optimization/teaching/vorlesungen-seminare-und-praktika/wintersemester/">Systems
-                    Optimization</a> at the <a href="https://www.tu-ilmenau.de/">TU Ilmenau</a>
+                    Optimization</a> in the <a href="https://www.tu-ilmenau.de/">TU Ilmenau</a>
                 <br>
                 Developed by <a href="https://elc.github.io">Ezequiel Leonardo Castaño</a>
-
             </p>
         </footer>
     </div>
@@ -127,6 +135,12 @@
         <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
             Index</button>
         <iframe src="https://elc.github.io/systems-optimization-methods" class="frame--secondary"></iframe>
+    </section>
+
+    <section id="Newton-Raphson" class="frame--secondary frame--invisible">
+        <button class="button frame--secondary__return-button" onclick="toggle(this.parentNode.id)">Return <br> to
+            Index</button>
+        <iframe src="https://elc.github.io/newton-method/" class="frame--secondary"></iframe>
     </section>
     
     <!-- Google Analytics -->

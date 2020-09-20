@@ -15,7 +15,7 @@ iframe {
 .button {
     width: 100%;
     margin: 5px;
-    height: 43px;
+    height: 40px;
     box-sizing: border-box;
     padding: 5px;
     background-color: #0d47a1;
@@ -67,7 +67,7 @@ iframe {
 .window {
     border: 2px solid grey;
     border-radius: 15px;
-    padding: 12px 12px;
+    padding: 15px;
     background-color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
@@ -93,15 +93,21 @@ iframe {
     width: 32%;
     height: auto;
     margin: 10px 0;
-    padding: 15px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+.option--multiple{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .option__title {
     margin: 0;
+    text-align: center;
 }
 
 .content {
