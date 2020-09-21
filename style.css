@@ -80,7 +80,7 @@ iframe {
     margin: 0;
     grid-column-start: 2;
     display: flex;
-    justify-content: center; /* align horizontal */
+    justify-content: center;
     align-items: center;
 }
 
@@ -122,6 +122,15 @@ iframe {
     justify-content: space-between;
 }
 
+.option--multiple__window{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .footer {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -133,6 +142,117 @@ iframe {
     padding: 0px;
     height: 68px;
     display: flex;
-    justify-content: center; /* align horizontal */
+    justify-content: center;
     align-items: center;
+}
+
+
+
+/* FOR COMPONENT */
+
+.header__settings{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.header__settings__label{
+    font-weight: normal;
+}
+
+.header__settings__component{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-weight: bold;
+}
+
+.header__settings__component__field{
+    margin: 5px;
+    height: 100%;
+}
+
+.header__input--function{
+    width: 250px;
+    padding: 2px;
+    height: 100%;
+}
+
+.header__input--point{
+    width: 50px;
+    height: 22px;
+    padding: 2px;
+    margin-right: 5px;
+    height: 100%;
+}
+
+.header__input--iteration{
+    padding: 2px;
+    height: 100%;
+}
+
+.button--function{
+    font-size: 10pt;
+    height: 37px;
+    margin: 10px 0 0 0;
+}
+
+.button--calculate{
+    width: 150px;
+    align-self: center;
+    font-size: 16pt;
+}
+
+.button--propose{
+    background-color: #bd8803;
+    font-size: 12pt;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.option--results{
+    width: 24%;
+    height: auto;
+    padding: 10px;
+    margin: 0 10px 0 0;
+    align-items: baseline;
+    font-family: 'M PLUS 1p', sans-serif;
+    font-size: 11pt;
+    box-sizing: content-box;
+}
+
+.option--results__measurements{
+    font-size: 8pt;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0;
+    width: 100%;
+}
+
+.option__title{
+    font-weight:bold;
+}
+
+.option--results__iteration{
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+}
+
+.option--plot{
+    padding-top: 0;
+    width: 65%;
+    box-sizing: border-box;
+    position: relative;
+    height: 400px;
+    flex-grow: 1;
+    margin: 0;
+}
+
+.option--test{
+    margin: 0 0 0 10px;
+    font-size: 11pt;
+    text-align: center;
+    width: 120px;
+    box-sizing: initial;
 }
